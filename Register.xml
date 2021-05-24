@@ -8,7 +8,7 @@
       To: <sip:service@[remote_ip]:[remote_port]>
       From: <sip:service@[remote_ip]:[remote_port]>
       Contact: <sip:service@[local_ip]:[local_port]>;transport=[transport]
-      Expires: 300
+      Expires: 3000
       Call-ID: [call_id]
       CSeq: 2 REGISTER
       Content-Length: 0
