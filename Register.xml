@@ -3,11 +3,11 @@
 <send retrans="500">
     <![CDATA[
 
-      REGISTER sip:[remote_ip] SIP/2.0
+      REGISTER sip:[remote_ip]:[remote_port] SIP/2.0
       Via: SIP/2.0/[transport] [local_ip]:[local_port]
-      To: <sip:1000@[remote_ip]:[remote_port]>
-      From: <sip:1000@[remote_ip]:[remote_port]>
-      Contact: <sip:1000@[local_ip]:[local_port]>;transport=[transport]
+      To: <sip:service@[remote_ip]:[remote_port]>
+      From: <sip:service@[remote_ip]:[remote_port]>
+      Contact: <sip:service@[local_ip]:[local_port]>;transport=[transport]
       Expires: 300
       Call-ID: [call_id]
       CSeq: 2 REGISTER
